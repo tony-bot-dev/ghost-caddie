@@ -236,7 +236,12 @@
             padding: 32px;
             box-shadow: 0 32px 64px -16px rgba(0,0,0,0.12);
             border: 1px solid rgba(0,0,0,0.05);
-            transform: rotate(2deg);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hero-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 40px 80px -16px rgba(0,0,0,0.2);
         }
 
         .hero-card-header {
@@ -643,7 +648,7 @@
 
     <section class="hero">
         <div class="hero-bg">
-            <img src="https://raw.githubusercontent.com/tony-bot-dev/ghost-caddie/main/hero.png" alt="Golf">
+            <img src="/hero.png" alt="Golf">
         </div>
         <div class="container">
             <div class="hero-content">
